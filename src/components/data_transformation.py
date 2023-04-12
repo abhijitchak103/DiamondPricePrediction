@@ -104,9 +104,9 @@ class DataTransformation:
             test_arr = np.c_[input_feature_test_arr, np.array(target_feature_test_df)]
 
             save_object(
-                file_path = self.data_transformation_config.preprocessor_obj_file_path
+                file_path = self.data_transformation_config.preprocessor_obj_file_path,
                 obj = preprocessor_obj
-            )
+                )
 
             logging.info('Preprocessor pickle file saved')
 
