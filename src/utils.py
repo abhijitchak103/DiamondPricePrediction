@@ -39,7 +39,7 @@ def evaluate_model(X_train, X_test, y_train, y_test, models):
 
             logging.info('Evaluating r2 scores for test data')
             test_model_score = r2_score(y_true=y_test, y_pred=y_pred)
-            logging.info(f'Obtsained R2 score for {value} model')
+            logging.info(f'Obtained R2 score for {value} model')
 
             report[key] = test_model_score
         
